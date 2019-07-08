@@ -12,16 +12,14 @@ and open the template in the editor.
 #title {
     text-align: center;
     padding-top: 100px;
-    
-    font-family: CaslonTwoTwentyFour-BlackIt;
-    font-weight: bold;
+    font-family: DM Serif Display, sans-serif;
     font-size: 48pt;
     color: var(--main-color);
 }
 
 body {
     background-color: var(--bg-color);
-    margin: 0px;
+    margin: 0;
 }
 
 #button_list{
@@ -46,7 +44,7 @@ ul {
 }
 
 .navLink {
-    font-family: Google Sans Italic;
+    font-family: Lato;
     font-size: 16px;
     color: var(--main-color);
     text-transform: uppercase;
@@ -76,6 +74,6 @@ ul {
     text-align: center;
     margin: auto;
     margin-top: 30px;
-    font-family: Google Sans Bold;
+    font-family: Lato;
     color: var(--main-color);
 }

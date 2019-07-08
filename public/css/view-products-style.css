@@ -12,9 +12,7 @@ and open the template in the editor.
 #title {
     text-align: center;
     padding-top: 100px;
-    
-    font-family: CaslonTwoTwentyFour-BlackIt;
-    font-weight: bold;
+    font-family: DM Serif Display;
     font-size: 48pt;
     color: var(--main-color);
 }
@@ -22,7 +20,7 @@ and open the template in the editor.
 body {
     background-color: var(--bg-color);
     color: var(--main-color);
-    font-family: Google Sans Regular;
+    font-family: Lato;
     margin-bottom: 100px;
     text-align: center;
 }
@@ -49,7 +47,7 @@ ul {
 }
 
 .navLink {
-    font-family: Google Sans Italic;
+    font-family: Lato;
     font-size: 16px;
     color: var(--main-color);
     text-transform: uppercase;
@@ -121,7 +119,7 @@ fieldset{
 }
 
 legend{
-    font-family: Google Sans Bold;
+    font-family: Lato;
 }
 
 #products{
@@ -151,7 +149,7 @@ td{
 }
 
 .addCart{
-    font-family: Google Sans Regular;
+    font-family: Lato;
     font-size: 12px;
     color: var(--main-color);
     text-transform: uppercase;
@@ -193,7 +191,7 @@ td{
 }
 
 .filterLink {
-    font-family: Google Sans Regular;
+    font-family: Lato;
     font-size: 14px;
     color: var(--main-color);
     text-transform: uppercase;
@@ -221,7 +219,7 @@ h2 {
     text-align: center;
     margin: auto;
     margin-top: 30px;
-    font-family: Google Sans Bold;
+    font-family: Lato;
     color: var(--main-color);
 }
 

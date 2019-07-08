@@ -12,9 +12,7 @@ and open the template in the editor.
 #title {
     text-align: center;
     padding-top: 100px;
-    
-    font-family: CaslonTwoTwentyFour-BlackIt;
-    font-weight: bold;
+    font-family: DM Serif Display, sans-serif;
     font-size: 48pt;
     color: var(--main-color);
 }
@@ -22,9 +20,8 @@ and open the template in the editor.
 body {
     background-color: var(--bg-color);
     color: var(--main-color);
-    font-family: Google Sans Regular;
-    margin: auto;
-    margin-bottom: 100px;
+    font-family: Lato, sans-serif;
+    margin: auto auto 100px;
     text-align: center;
 }
 
@@ -51,7 +48,7 @@ ul {
 }
 
 .navLink {
-    font-family: Google Sans Italic;
+    font-family: Lato, sans-serif;
     font-size: 16px;
     color: var(--main-color);
     text-transform: uppercase;
@@ -59,10 +56,8 @@ ul {
     
     background-color: var(--bg-color);
     display: inline-block;
-    padding: 7px;
-    padding-left: 15px;
-    padding-right: 15px;
-    
+    padding: 7px 15px;
+
     border-width: 1px;
     border-radius: 2px;
     border-style: solid;
@@ -88,7 +83,6 @@ ul {
     padding: 5px;
     margin-bottom: 10px;
     margin-left: 15px;
-    float: right;
     clear: both;
     background-color: var(--form-table-color);
     border-style: none;
@@ -125,7 +119,7 @@ fieldset{
 }
 
 legend{
-    font-family: Google Sans Bold;
+    font-family: Lato, sans-serif;
 }
 
 #createacc {

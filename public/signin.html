@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html ng-app="ShoppingApp">
+    <head>
+        <title>Web Store - Sign In</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/create-account-style.css">
+        <script src="js/angular.min.js"></script>
+        <script src="js/angular-resource.min.js"></script>
+        <script src="js/ngStorage.min.js"></script>
+        <script src="js/shopping.js"></script>
+       
+    </head>
+    <body>
+        <div id="title">The Web Store</div>
+        <div ng-include="'menu.html'" ></div>
+        
+        <div ng-controller="CustomerController as custCtrl" class="flex">
+            
+            <p>{{custCtrl.signInMessage}}</p>
+            
+            <form ng-submit="custCtrl.signIn(username, password)" 
+                  class="column" 
+                  method="POST">
+                
+                <fieldset>
+                <legend>Sign In</legend>
+                
+                <p>
+                    <label class="formtitle">Username:
+                        <input class="right" ng-model="username" type="text" name="username" placeholder="example" required>
+                    </label>
+                </p>
+                
+                <p>
+                    <label class="formtitle">Password:
+                        <input class="right" ng-model="password" type="password" name="password" placeholder="********" required>
+                    </label>
+                </p>
+                
+                <p>
+                    <input id="submit" type="submit" value="Sign In">
+                </p>
+                </fieldset>
+            </form>
+        </div>
+       
+        Or you can <a id="createacc" href="create_account.html">create an account</a>
+        
+    </body>
+</html>

@@ -1,0 +1,41 @@
+' worked with caleb mazure for UML, base code from reference document
+@startuml
+' use strict UML mode
+skinparam style strictuml
+
+actor "User" as user
+
+participant "Administration" as main <<main>>
+main++
+
+create "MainMenu" as menu <<frame>>
+main -> menu : construct
+
+' set the menu to be visible on the display
+main -> menu++ : setVisible(true)
+user -> menu : click 'view Product'
+
+create "ProductReport" as report <<dialog>>
+menu -> report : construct
+
+' set the report dialog to be visible on the display
+menu -> report++ : setVisible(true)
+
+' create a DAO
+participant "ProductDAO" as dao <<DAO>>
+dao++
+' get product list from DAO
+report -> dao : getProductsList() 
+' DAO returns the list of products
+dao -> report : return categoryList
+' the list model in the report dialog is set with information returned from DAO
+report -> report : setModel(listModel)
+
+user -> report : click 'cancel'
+
+'dispose dialog
+report -> report : dispose()
+destroy report
+
+@enduml
+

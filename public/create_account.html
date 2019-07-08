@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html ng-app="ShoppingApp">
+    <head>
+        <title>Web Store - Create Account</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/create-account-style.css">
+        <script src="js/angular.min.js"></script>
+        <script src="js/angular-resource.min.js"></script>
+        <script src="js/ngStorage.min.js"></script>
+        <script src="js/shopping.js"></script>
+    </head>
+    <body>
+        <div id="title">The Web Store</div>
+        <div ng-include="'menu.html'" ></div>
+        
+        <div class="flex">
+            <form ng-controller="CustomerController as custCtrl" 
+                  ng-submit="custCtrl.registerCustomer(customer)" 
+                  class="column" 
+                  method="POST"
+                  onsubmit="window.location='signin.html';">
+                
+                <fieldset>
+                <legend>Personal information:</legend>
+                
+                <p>
+                    <label class="formtitle">Username:
+                        <input class="right" type="text" maxlength=50 ng-model="customer.username" name="username" placeholder="example" required>
+                    </label>
+                </p>
+                
+                <p>
+                    <label class="formtitle">First Name:
+                        <input class="right" type="text" maxlength=50 ng-model="customer.firstName" name="firstname" placeholder="John" required>
+                    </label>
+                </p>
+                
+                <p>
+                    <label class="formtitle">Last Name:
+                        <input class="right" type="text" maxlength=50 ng-model="customer.surname" name="lastname" placeholder="Johnson" required>
+                    </label>
+                </p>
+                
+                <p>
+                    <label class="formtitle">Email address:
+                        <input class="right" type="email" maxlength=50 ng-model="customer.email" name="email" placeholder="example@example.com" required>
+                    </label>
+                </p>
+                
+                <p>
+                    <label class="formtitle">Address:
+                        <textarea class="right" maxlength=200 ng-model="customer.address" name="address" rows="10" cols="30" placeholder="123 Example Street" required></textarea>
+                    </label>
+                </p>
+                
+                <p>
+                    <label class="formtitle">Credit Card:
+                        <input class="right" type="text" maxlength=50 ng-model="customer.creditCardDetails" name="creditcard" placeholder="12341234234234" required>
+                    </label>
+                </p>
+                
+                <p>
+                    <label class="formtitle">Password:
+                        <input class="right" type="password" maxlength=50 ng-model="customer.password" name="password" placeholder="********" required>
+                    </label>
+                </p>
+                
+                
+                
+                <p>
+                    <input id="submit" type="submit" value="Create Account">
+                </p>
+                </fieldset>
+            </form>
+        </div>
+        
+    </body>
+</html>
+
+
+
+
+
+

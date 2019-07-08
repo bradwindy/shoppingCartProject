@@ -1,0 +1,231 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 5/09/2018, 8:21:31 PM
+    Author     : bradley
+*/
+@import "colours-and-fonts.css";
+
+#title {
+    text-align: center;
+    padding-top: 100px;
+    
+    font-family: CaslonTwoTwentyFour-BlackIt;
+    font-weight: bold;
+    font-size: 48pt;
+    color: var(--main-color);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--main-color);
+    font-family: Google Sans Regular;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.button_list{
+    padding-top: 20px;
+}
+
+.navlink:visited {
+    color: var(--main-color);
+    
+}
+
+.navLink:hover {
+    background-color: var(--main-color);
+    color: var(--bg-color);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navLink {
+    font-family: Google Sans Italic;
+    font-size: 16px;
+    color: var(--main-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    background-color: var(--bg-color);
+    display: inline-block;
+    padding: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    border-width: 1px;
+    border-radius: 2px;
+    border-style: solid;
+    border-color: var(--main-color);
+    
+    transition: color, background-color 0.1s;
+}
+
+.button {
+    display: inline;
+    width: 80px;
+    padding: 7px;
+}
+
+
+.formtitle{
+    float: right;
+}
+
+.right {
+    float: right;
+    width: 300px;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    float: right;
+    clear: both;
+    background-color: var(--form-table-color);
+    border-style: none;
+    border-width: 1px;
+    color: var(--main-color);
+}
+
+.flex {
+    display: flex;
+    margin: auto;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 40px;
+}
+
+fieldset{
+    margin: auto;
+    padding: 30px;
+    padding-top: 10px;
+    border-color: var(--main-color);
+    border-style: solid;
+    border-width: 1px;
+}
+
+#submit {
+    float: right;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+legend{
+    font-family: Google Sans Bold;
+}
+
+#products{
+    margin-top: 20px;
+}
+
+#product-table{
+    margin: auto;
+    border: none;
+    border-collapse: collapse;
+    width: 70%;
+    background-color: var(--form-table-color);
+}
+
+tr, th{
+    padding: 10px;
+    border-style: solid;
+    border-width: 1px;
+    text-align: left;
+    border-color: var(--main-color);
+    background-color: var(--form-table-color);
+}
+
+td{
+    padding: 10px;
+    background-color: var(--form-table-color);
+}
+
+.addCart{
+    font-family: Google Sans Regular;
+    font-size: 12px;
+    color: var(--main-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    background-color: var(--bg-color);
+    display: inline-block;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    border-width: 1px;
+    border-radius: 2px;
+    border-style: solid;
+    border-color: var(--main-color);
+    
+    transition: color, background-color 0.1s;
+    float: right;
+}
+
+.addCart:visited {
+    color: var(--main-color);
+    
+}
+
+.addCart:hover {
+    background-color: var(--main-color);
+    color: var(--bg-color);
+}
+
+.filterLink:visited {
+    color: var(--main-color);
+    
+}
+
+.filterLink:hover {
+    background-color: var(--main-color);
+    color: var(--bg-color);
+}
+
+.filterLink {
+    font-family: Google Sans Regular;
+    font-size: 14px;
+    color: var(--main-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    background-color: var(--bg-color);
+    display: inline-block;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    border-width: 1px;
+    border-radius: 2px;
+    border-style: solid;
+    border-color: var(--main-color);
+    
+    transition: color, background-color 0.1s;
+}
+
+h2 {
+    margin-top: 50px;
+}
+
+#welcome {
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    font-family: Google Sans Bold;
+    color: var(--main-color);
+}
+
+#menu {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}

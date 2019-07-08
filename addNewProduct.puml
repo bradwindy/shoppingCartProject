@@ -1,0 +1,50 @@
+' worked with caleb mazure for UML, base code from reference document
+
+@startuml
+' use strict UML mode
+skinparam style strictuml
+
+actor "User" as user
+
+participant "Administration" as main <<main>>
+main++
+
+create "MainMenu" as menu <<frame>>
+main -> menu : construct
+
+' set the menu to be visible on the display
+main -> menu++ : setVisible(true)
+
+user -> menu : click 'add Product'
+
+create "ProductEditor" as editor <<dialog>>
+menu -> editor : construct
+
+' set the editor to be visible on the display
+menu -> editor++ : setVisible(true)
+
+' create a DAO
+create "ProductDAO" as dao <<DAO>>
+editor -> dao++ : construct
+
+user -> editor : enters product details
+user -> editor : clicks save button
+
+' get the details from the relevant text boxes
+editor -> editor : get details from input
+
+' save book
+create "Product : productName" as product <<domain>>
+editor -> product++ : construct with details
+
+' add product to DAO
+editor -> dao : addToProducts(product)
+
+
+'dispose dialog
+editor -> editor : dispose()
+
+destroy editor
+
+@enduml
+

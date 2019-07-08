@@ -11,6 +11,12 @@ Full stack shopping cart web app based on a University Project.
 * HTML + CSS
 * H2 SQL
 
+## Testing
+
+* JUnit
+* AssertJ
+* Mockito
+
 ## Authors
 
 * **Bradley Windybank** - *All work unless where credited otherwise* 
